@@ -27,7 +27,7 @@ int main(void)
     while(fgets(buf,sizeof(buf),fp) != NULL){
         sscanf(buf,"%lf",&val);
 
-        max_val = max_val*p_stdnorm((val-MUA)/sigmaA);
+        max_val = max_val*p_stdnorm((val-MUA)/sigmaA); 
         min_val = min_val*p_stdnorm((val-MUB)/sigmaB);
     
 
