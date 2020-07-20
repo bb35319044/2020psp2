@@ -51,7 +51,7 @@ int main(void)
 
 }
 
-double ave_online(double val,double ave,int x)
+double ave_online(double val,double ave,int x) 
 {
     double a;
      a = ((x-1)*ave/x) + val/x;
