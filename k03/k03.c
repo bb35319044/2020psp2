@@ -22,7 +22,7 @@ int main(int argc, char* argv[])
 
     if(argc != 4)
     {
-        printf("エラー\n");
+        printf("error\n");
         return 0;
     }
     sscanf(argv[1],"%lf",&mu);
@@ -39,7 +39,7 @@ int main(int argc, char* argv[])
     printf("============================================\n");
 
     srand(RAND_SEED);
-    for(i=1;i>=num_dummy;i++ ){
+    for(i=1;i<=num_dummy;i++ ){
         /* r_stdnormを使って，1人のデータを捏造 */
         dummy = r_stdnorm()*sigma + mu  ;
         printf("%5.2lf\n",dummy);
