@@ -46,16 +46,12 @@ aa83988848 薗田光太郎
 あいうえお
 
 ## 入出力結果
-
-```
 input the filename of sample:../sample/heights_male.csv
 the filename of sample: ../sample/heights_male.csv
-sample mean：
-sample variance：
-population mean (estimated)：
-population variance (estimated)：
-```
-
+sample mean・・1.#IND00
+sample variance :-1.#IND00
+population mean(estimated) : -1.#IND00
+population variance(estimated) : 199.616667
 ## 修正履歴
 
 説明は「かきくけこ」だ！
