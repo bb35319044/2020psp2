@@ -24,14 +24,14 @@ int main(void)
         fputs("File open error\n",stderr);
         exit(EXIT_FAILURE);
     }
-
+    x=1;
     while(fgets(buf,sizeof(buf),fp) != NULL){
         sscanf(buf,"%lf",&val);
 
         ave1 = ave_online(val,ave,x);
         var1 = var_online(val,ave,square_ave,x);
         heikin = ave1;
-        bunsan = x*val/(x-1);
+        bunsan = x*var1/(x-1);
         square_ave = ave_online(val*val,square_ave,x);
         x = x+1;
         ave = ave1;
@@ -54,13 +54,13 @@ int main(void)
 double ave_online(double val,double ave,int x) 
 {
     double a;
-     a = ((x-1)*ave/x) + val/x;
+     a = (x-1)*ave/x + val/x;
      return a;
     
 }
 double var_online(double val,double ave,double square_ave,int x)
 {
     double b;
-    b = (((x-1)*square_ave/x) + val*val/x) - pow(((x-1)*ave/x) + val/x,2);
+    b = (((x-1)*square_ave/x) + val*val/x) - (((x-1)*ave/x) + val/x)*(((x-1)*ave/x) + val/x);
     return b;
 }
