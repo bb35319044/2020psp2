@@ -24,7 +24,7 @@ input the filename of sample ID ? : ../sample/IDs.csv
 Which ID's date do you want ? : 45313125
 ---
 ID : 45313125
-gender : Male
+gender : Female
 height : 152.4
 ```
 
