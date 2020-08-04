@@ -72,20 +72,33 @@ int main(int argc, char* argv[])
 以下は例です． コンパイルするときに`-DCONST_SEED`をつけるとこうなります．
 
 ```
+PS C:\Users\bb35319044\Documents\git\2020psp2\k03> gcc -o k03_1 k03.c -DCONST_SEED
+PS C:\Users\bb35319044\Documents\git\2020psp2\k03> ./k03_1 170.8 5.43 5
 ============================================
 template mean: 170.8
 template standard deviation: 5.43
 Num of dummy data: 5
 ============================================
-169.70
-159.20
-175.31
-164.34
-172.47
+162.20
+171.29
+175.88
+168.59
+166.74
 ```
 
 コンパイル時に`-DCONST_SEED`をつけない場合を以下に示す．
-
+PS C:\Users\bb35319044\Documents\git\2020psp2\k03> gcc -o k03 k03.c
+PS C:\Users\bb35319044\Documents\git\2020psp2\k03> ./k03 170.8 5.43 5       
+============================================
+template mean: 170.8
+template standard deviation: 5.43
+Num of dummy data: 5
+============================================
+179.28
+177.93
+166.02
+174.85
+175.11
 
 
 ## 修正履歴
