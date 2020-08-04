@@ -87,6 +87,7 @@ Num of dummy data: 5
 ```
 
 コンパイル時に`-DCONST_SEED`をつけない場合を以下に示す．
+```
 PS C:\Users\bb35319044\Documents\git\2020psp2\k03> gcc -o k03 k03.c
 PS C:\Users\bb35319044\Documents\git\2020psp2\k03> ./k03 170.8 5.43 5       
 ============================================
@@ -99,7 +100,7 @@ Num of dummy data: 5
 166.02
 174.85
 175.11　
-
+```
 
 ## 修正履歴
 
@@ -131,3 +132,6 @@ Num of dummy data: 5
   k03 170.8 5.43 5
   ```
   の結果もコピペしてください．
+
+[comment #20200804-2 sonoda]
+- OKです．課題3完了
