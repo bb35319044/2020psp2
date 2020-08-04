@@ -87,7 +87,7 @@ int main(void)
     {
         printf("ID : %d\n",a[num].id);
 
-    if(a[num].sex==0)
+    if(a[num].sex==2)
     {
         printf("gender : Female\n");
     }
